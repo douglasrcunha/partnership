@@ -12,4 +12,4 @@ Tecnologias usadas:
 
 * Python
 
-* Postgresql
+* SQL
