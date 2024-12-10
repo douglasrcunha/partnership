@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PARTNERSHIP</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="brand">partnership</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="parceiros.html">Parceiros</a>
+                <a href="experiencia.html">Experiências</a>
+                <a href="acelera.html">Acelera</a>
+                <a href="contato.html">Contato</a>
+                <a href="login.html">Cadastre-se</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="home">
+        <video class="video-slide active" src="video/acelera.mp4" autoplay muted loop></video>
+        <div class="content active">
+            <h1>ACELERA</h1>
+            <p>Mais vantagens para você, pondendo dobrar os pontos e também adquerir Experiências incríveis, durante o andamento da campanha PARTNERSHIP vigente.</p>
+        </div>
+
+        <div id="card-area">
+            <div class="wrapper">
+                <div class="box-area">
+                    <div class="box">
+                        <img src="assets/iphone.jpg" alt="Mickey Mouse e sua turna na frento do casto da Cinderela no parque da Disney">
+                        <div class="overlay">
+                            <h3>Dispositivos</h3>
+                            <p>No ACELERA você pode experienciar os melhores dispositivos!</p>
+                            <a href="login.html">Cadastre-se</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="assets/Gastronomica.png" alt="Imagem tira da torre Eiffel">
+                        <div class="overlay">
+                            <h3>Gastronomia</h3>
+                            <p>No ACELERA você pode experienciar as melhores Gastronomias!</p>
+                            <a href="login.html">Cadastre-se</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="assets/spa1.1.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Spas</h3>
+                            <p>No ACELERA você pode experienciar Spas para seções de relaxamento!</p>
+                            <a href="login.html">Cadastre-se</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="assets/jetski.jpg" alt="Foto aerea do mar, com aguas cristalinas e conjunto de bangalos em maldivas">
+                        <div class="overlay">
+                            <h3>Jet Ski</h3>
+                            <p>No ACELERA você pode experienciar toda adrenalina do Jet Ski!</p>
+                            <a href="login.html">Cadastre-se</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="assets/shows4.jpg" alt="Imagem de uma construção tradicional japonesa ao lado de uma arvore de flor de cerejeira com o monte Fuji ao fundo">
+                        <div class="overlay">
+                            <h3>Shows e Eventos</h3>
+                            <p>No ACELERA você pode experienciar grandes shows, eventos e workshops!</p>
+                            <a href="login.html">Cadastre-se</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="media-icons">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/osni_partnership/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+        </div>
+
+    </section>
+
+    <script type="text/javascript">
+    ///Javascript da responsividade do navigation.menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+    });
+
+    </script>
+    
+</body>
+</html>
+

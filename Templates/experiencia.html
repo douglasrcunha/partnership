@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PARTNERSHIP</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="brand">partnership</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="parceiros.html">Parceiros</a>
+                <a href="experiencia.html">Experiências</a>
+                <a href="acelera.html">Acelera</a>
+                <a href="contato.html">Contato</a>
+                <a href="login.html">Cadastre-se</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="home">
+        <video class="video-slide active" src="video/roma.mp4" autoplay muted loop></video>
+        <div class="content active">
+            <h1>VEJA ALGUNS<br><span>DESTINOS QUE SEUS PONTOS PODEM TE LEVAR</span></h1>
+        </div>
+            <div id="card-area">
+                <div class="wrapper">
+                    <div class="box-area">
+                        <div class="box">
+                            <img src="experiencias/disney.jpg" alt="Mickey Mouse e sua turna na frento do casto da Cinderela no parque da Disney">
+                            <div class="overlay">
+                                <h3>Parques da Disney</h3>
+                                <p>Você pode experienciar toda a magia dos parques da Disney ao redor do Mundo!</p>
+                                <a href="login.html">Cadastre-se</a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="experiencias/franca.jpg" alt="Imagem tira da torre Eiffel">
+                            <div class="overlay">
+                                <h3>Paris</h3>
+                                <p>Você pode experienciar todo encanto da cidade luz!</p>
+                                <a href="login.html">Cadastre-se</a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="experiencias/italia.jpg" alt="">
+                            <div class="overlay">
+                                <h3>Italia</h3>
+                                <p>Você pode experienciar toda a riquesa cultural e gastronomica que somente a Italia oferece!</p>
+                                <a href="login.html">Cadastre-se</a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="experiencias/maldivas.jpg" alt="Foto aerea do mar, com aguas cristalinas e conjunto de bangalos em maldivas">
+                            <div class="overlay">
+                                <h3>Maldivas</h3>
+                                <p>Você pode experienciar todo o encando de um dos lugares mais paradisiacos do mundo!</p>
+                                <a href="login.html">Cadastre-se</a>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img src="experiencias/japao.jpg" alt="Imagem de uma construção tradicional japonesa ao lado de uma arvore de flor de cerejeira com o monte Fuji ao fundo">
+                            <div class="overlay">
+                                <h3>Japão</h3>
+                                <p>Você pode experienciar toda a tradição, e tecnologia que somente a terra do Sol Nascente pode te oferecer!</p>
+                                <a href="login.html">Cadastre-se</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="media-icons">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/osni_partnership/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+        </div>
+
+
+    </section>
+
+    <script type="text/javascript">
+    ///Javascript da responsividade do navigation.menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+    });
+
+    </script>
+    
+</body>
+</html>
+
