@@ -1,0 +1,24 @@
+{%  extends 'LandingPage/base.html' %}
+{% load static %}
+{% block conteudo %}
+
+
+    <section class="home">
+        <video class="video-slide active" src="{% static 'video/contato.mp4' %}" autoplay muted loop></video>
+        <div class="contat">
+            <div class="content active">
+                <div class="content active">
+                <h1>Entre em contato<br><span style="font-size: 62px;">conosco</span></h1>
+                <p><a href="mailto:contato@partnership.com.br"><i class="fa-regular fa-envelope fa-beat" style="color: #ffffff;"></i></a>contato@partnership.com.br</p>
+                <p><a href="https://wa.me/5511917922253?text=Quero%20viver%20as%20experi%C3%AAncias%20do%20Partnership"><i class="fa-brands fa-whatsapp fa-beat" style="color: #ffffff;"></i></a>(11) 98695-0878</p>
+                </div>
+            </div>
+            <div class="chat-bot">
+                <h3><span>Ou acesse nosso chat bot para um atendimento mais rápido.</span></h3>
+                <img src="imagens/QRCode-Chatbot.png" alt="">
+            </div>
+        </div>
+        
+    </section>
+{% endblock %}
+

@@ -1,0 +1,21 @@
+{%  extends 'LandingPage/base.html' %}
+{% load static %}
+{% block conteudo %}
+
+    <section class="home">
+        <video class="video-slide active" src="{% static 'video/index1.mp4' %}" autoplay muted loop></video>
+        <div class="content active">
+            <h1>BEM VINDO.<br><span class="partnership">partnership</span></h1>
+            <p>O Partnership é um programa de fidelidade que permite acumular pontos com base em compras com marcas ou serviços parceiro. Para profissionais das áreas de arquitetura, engenharia e design, uma excelente maneira de obter benefícios exclusivos, como descontos em materiais, premios, eventos e até serviços relacionados à sua profissão.</p>
+            <a href="login.html" class="buttom">Saiba Mais</a>
+        </div>
+
+        <div class="media-icons">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/osni_partnership/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+        </div>
+
+    </section>
+{% endblock %}
+

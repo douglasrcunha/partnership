@@ -1,0 +1,281 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'style.css'  %}">
+    <title>Responsive Dashboard Design #1 | AsmrProg</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <h2 style="font-family: 'Minimo Regular'; font-size: 30px; font-weight: 900;"><span>partnership</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="{% url 'dashboard.html' %}">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Painel</h3>
+                </a>
+                <a href="user.html">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>Usuario</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        receipt_long
+                    </span>
+                    <h3>Historico</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        mail_outline
+                    </span>
+                    <h3>Mensagens</h3>
+                    <span class="message-count">59</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        inventory
+                    </span>
+                    <h3>Lista de Desejos</h3>
+                    {{dados}}
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        report_gmailerrorred
+                    </span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Configuração</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        add
+                    </span>
+                    <h3>Novo Usuário</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <h1>Analytics</h1>
+            <!-- Analyses -->
+            <div class="analyse">
+                <div class="sales">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total em Pontos</h3>
+                            <h1>137.942</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+81%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visits">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Pontos este Mês</h3>
+                            <h1>97.245</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+480%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Analyses -->
+
+            <!-- Recent Orders Table -->
+            <div class="recent-orders">
+                <h2>Últimos Lançamentos</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Loja</th>
+                            <th>Parceiro</th>
+                            <th>Pontos</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <a href="#">Ver Todos</a>
+            </div>
+            <!-- End of Recent Orders -->
+
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Olá, <b>Osni</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="{% static 'images-dashboard/perfil.png'  %}">
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of Nav -->
+
+            <div class="user-profile">
+                <div class="logo">
+                    <img src="{% static 'images-dashboard/pontos-em-dobro-2.jpg'  %}">
+                    <h2>Campanha Ativa</h2>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="upcoming">
+
+                <div class="header">
+                    <h4>Atividades da Semana</h4>
+                    <a href="#">Dezembro <i class='bx bx-chevron-down'></i></a>
+                </div>
+    
+                <div class="dates">
+                    <div class="item">
+                        <h5>Dom</h5>
+                        <a href="#">15</a>
+                    </div>
+                    <div class="item active">
+                        <h5>Seg</h5>
+                        <a href="#">16</a>
+                    </div>
+                    <div class="item">
+                        <h5>Ter</h5>
+                        <a href="#">17</a>
+                    </div>
+                    <div class="item">
+                        <h5>Qua</h5>
+                        <a href="#">18</a>
+                    </div>
+                    <div class="item">
+                        <h5>Qui</h5>
+                        <a href="#">19</a>
+                    </div>
+                    <div class="item">
+                        <h5>Sex</h5>
+                        <a href="#">20</a>
+                    </div>
+                    <div class="item">
+                        <h5>Sab</h5>
+                        <a href="#">21</a>
+                    </div>
+                </div>
+    
+                <div class="events">
+                    <div class="item">
+                        <div>
+                            <i class='bx bx-time'></i>
+                            <div class="event-info">
+                                <a href="#">Data Science</a>
+                                <p>10:00-11:30</p>
+                            </div>
+                        </div>
+                        <i class='bx bx-dots-horizontal-rounded'></i>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <i class='bx bx-time'></i>
+                            <div class="event-info">
+                                <a href="#">Machine Learning</a>
+                                <p>13:30-15:00</p>
+                            </div>
+                        </div>
+                        <i class='bx bx-dots-horizontal-rounded'></i>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <i class='bx bx-time'></i>
+                            <div class="event-info">
+                                <a href="#">Beginner Python</a>
+                                <p>11:30-13:00</p>
+                            </div>
+                        </div>
+                        <i class='bx bx-dots-horizontal-rounded'></i>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="{% static 'orders.js'  %}"></script>
+    <script src="{% static 'calendario.js'  %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{% static 'Analytic.js'  %}"></script>
+
+</body>
+
+</html>

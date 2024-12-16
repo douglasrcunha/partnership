@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PARTNERSHIP</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="brand">partnership</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="{% url 'index' %}">Home</a>
+                <a href="{% url 'sobre' %}">Sobre</a>
+                <a href="{% url 'parceiros' %}">Parceiros</a>
+                <a href="{% url 'experiencias' %}">Experiências</a>
+                <a href="{% url 'acelera' %}">Acelera</a>
+                <a href="{% url 'contato' %}">Contato</a>
+                <a href="{% url 'registra' %}">Cadastre-se</a>
+                <a href="{% url 'login' %}">Login</a>
+            </div>
+        </div>
+    </header>
+    {% block conteudo %} 
+
+    {% endblock %}
+    <script type="text/javascript">
+        ///Javascript da responsividade do navigation.menu
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+    
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+    
+        </script>
+        
+    </body>
+    </html>
